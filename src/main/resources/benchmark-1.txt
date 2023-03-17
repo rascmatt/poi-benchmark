@@ -1,0 +1,188 @@
+# JMH version: 1.36
+# VM version: JDK 11.0.18, OpenJDK 64-Bit Server VM, 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.apache.poi.xssf.streaming.Main.benchOriginal
+
+# Run progress: 0.00% complete, ETA 00:15:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 522589.079 ops/s
+# Warmup Iteration   2: 513106.521 ops/s
+# Warmup Iteration   3: 612154.159 ops/s
+# Warmup Iteration   4: 619761.849 ops/s
+# Warmup Iteration   5: 621498.363 ops/s
+Iteration   1: 600088.567 ops/s
+Iteration   2: 611062.556 ops/s
+Iteration   3: 618327.900 ops/s
+Iteration   4: 619993.561 ops/s
+Iteration   5: 621859.279 ops/s
+
+# Run progress: 11.11% complete, ETA 00:17:06
+# Fork: 2 of 3
+# Warmup Iteration   1: 478246.706 ops/s
+# Warmup Iteration   2: 449997.179 ops/s
+# Warmup Iteration   3: 514069.045 ops/s
+# Warmup Iteration   4: 512299.229 ops/s
+# Warmup Iteration   5: 514957.173 ops/s
+Iteration   1: 510457.146 ops/s
+Iteration   2: 514257.723 ops/s
+Iteration   3: 509737.514 ops/s
+Iteration   4: 513989.051 ops/s
+Iteration   5: 512948.565 ops/s
+
+# Run progress: 22.22% complete, ETA 00:14:48
+# Fork: 3 of 3
+# Warmup Iteration   1: 411691.418 ops/s
+# Warmup Iteration   2: 403264.994 ops/s
+# Warmup Iteration   3: 436642.233 ops/s
+# Warmup Iteration   4: 435978.425 ops/s
+# Warmup Iteration   5: 437983.975 ops/s
+Iteration   1: 430823.470 ops/s
+Iteration   2: 434853.347 ops/s
+Iteration   3: 435892.963 ops/s
+Iteration   4: 434907.188 ops/s
+Iteration   5: 437307.567 ops/s
+
+
+Result "org.apache.poi.xssf.streaming.Main.benchOriginal":
+  520433.760 ±(99.9%) 81525.743 ops/s [Average]
+  (min, avg, max) = (430823.470, 520433.760, 621859.279), stdev = 76259.231
+  CI (99.9%): [438908.017, 601959.503] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 11.0.18, OpenJDK 64-Bit Server VM, 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.apache.poi.xssf.streaming.Main.bench_405
+
+# Run progress: 33.33% complete, ETA 00:12:32
+# Fork: 1 of 3
+# Warmup Iteration   1: 543506.534 ops/s
+# Warmup Iteration   2: 511470.709 ops/s
+# Warmup Iteration   3: 567795.940 ops/s
+# Warmup Iteration   4: 566566.365 ops/s
+# Warmup Iteration   5: 564995.160 ops/s
+Iteration   1: 566863.936 ops/s
+Iteration   2: 566574.215 ops/s
+Iteration   3: 566127.761 ops/s
+Iteration   4: 564921.292 ops/s
+Iteration   5: 564855.313 ops/s
+
+# Run progress: 44.44% complete, ETA 00:10:30
+# Fork: 2 of 3
+# Warmup Iteration   1: 557404.856 ops/s
+# Warmup Iteration   2: 518870.803 ops/s
+# Warmup Iteration   3: 580301.043 ops/s
+# Warmup Iteration   4: 580045.771 ops/s
+# Warmup Iteration   5: 579856.459 ops/s
+Iteration   1: 581015.650 ops/s
+Iteration   2: 578231.905 ops/s
+Iteration   3: 580157.145 ops/s
+Iteration   4: 513392.675 ops/s
+Iteration   5: 550622.830 ops/s
+
+# Run progress: 55.56% complete, ETA 00:08:26
+# Fork: 3 of 3
+# Warmup Iteration   1: 566280.331 ops/s
+# Warmup Iteration   2: 515131.671 ops/s
+# Warmup Iteration   3: 614036.961 ops/s
+# Warmup Iteration   4: 611286.973 ops/s
+# Warmup Iteration   5: 611678.647 ops/s
+Iteration   1: 613856.900 ops/s
+Iteration   2: 611081.324 ops/s
+Iteration   3: 613608.293 ops/s
+Iteration   4: 607487.350 ops/s
+Iteration   5: 611932.087 ops/s
+
+
+Result "org.apache.poi.xssf.streaming.Main.bench_405":
+  579381.912 ±(99.9%) 30395.196 ops/s [Average]
+  (min, avg, max) = (513392.675, 579381.912, 613856.900), stdev = 28431.685
+  CI (99.9%): [548986.716, 609777.108] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 11.0.18, OpenJDK 64-Bit Server VM, 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.apache.poi.xssf.streaming.Main.bench_66532
+
+# Run progress: 66.67% complete, ETA 00:06:21
+# Fork: 1 of 3
+# Warmup Iteration   1: 2605366.822 ops/s
+# Warmup Iteration   2: 1014544.099 ops/s
+# Warmup Iteration   3: 2888601.781 ops/s
+# Warmup Iteration   4: 2902684.654 ops/s
+# Warmup Iteration   5: 3054727.288 ops/s
+Iteration   1: 2956063.396 ops/s
+Iteration   2: 3033854.373 ops/s
+Iteration   3: 2998536.888 ops/s
+Iteration   4: 3005844.647 ops/s
+Iteration   5: 3032944.670 ops/s
+
+# Run progress: 77.78% complete, ETA 00:04:21
+# Fork: 2 of 3
+# Warmup Iteration   1: 2833784.549 ops/s
+# Warmup Iteration   2: 1013989.724 ops/s
+# Warmup Iteration   3: 3216561.838 ops/s
+# Warmup Iteration   4: 3223532.748 ops/s
+# Warmup Iteration   5: 3207943.867 ops/s
+Iteration   1: 3175706.733 ops/s
+Iteration   2: 3139039.772 ops/s
+Iteration   3: 3126540.127 ops/s
+Iteration   4: 3158655.181 ops/s
+Iteration   5: 3147115.293 ops/s
+
+# Run progress: 88.89% complete, ETA 00:02:13
+# Fork: 3 of 3
+# Warmup Iteration   1: 3058901.681 ops/s
+# Warmup Iteration   2: 1051164.688 ops/s
+# Warmup Iteration   3: 3103982.144 ops/s
+# Warmup Iteration   4: 3106439.905 ops/s
+# Warmup Iteration   5: 3087235.519 ops/s
+Iteration   1: 2707224.498 ops/s
+Iteration   2: 3100589.451 ops/s
+Iteration   3: 3024704.476 ops/s
+Iteration   4: 3039206.508 ops/s
+Iteration   5: 2789909.388 ops/s
+
+
+Result "org.apache.poi.xssf.streaming.Main.bench_66532":
+  3029062.360 ±(99.9%) 141908.012 ops/s [Average]
+  (min, avg, max) = (2707224.498, 3029062.360, 3175706.733), stdev = 132740.842
+  CI (99.9%): [2887154.348, 3170970.372] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:20:32
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark            Mode  Cnt        Score        Error  Units
+Main.benchOriginal  thrpt   15   520433.760 ±  81525.743  ops/s
+Main.bench_405      thrpt   15   579381.912 ±  30395.196  ops/s
+Main.bench_66532    thrpt   15  3029062.360 ± 141908.012  ops/s
+
+Process finished with exit code 0
