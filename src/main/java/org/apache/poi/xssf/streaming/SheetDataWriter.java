@@ -609,6 +609,59 @@ public class SheetDataWriter implements Closeable {
         }
     }
 
+    protected void outputEscapedString66532_final(String s) throws IOException {
+        if (s == null || s.length() == 0) {
+            return;
+        }
+
+        int codepoint;
+        for (PrimitiveIterator.OfInt iter = CodepointsUtil.primitiveIterator(s); iter.hasNext(); ) {
+            codepoint = iter.nextInt();
+            switch (codepoint) {
+                case '<':
+                    _out.write("&lt;");
+                    break;
+                case '>':
+                    _out.write("&gt;");
+                    break;
+                case '&':
+                    _out.write("&amp;");
+                    break;
+                case '\"':
+                    _out.write("&quot;");
+                    break;
+                // Special characters
+                case '\n':
+                    _out.write("&#xa;");
+                    break;
+                case '\r':
+                    _out.write("&#xd;");
+                    break;
+                case '\t':
+                    _out.write("&#x9;");
+                    break;
+                case '\u00A0': // NO-BREAK SPACE
+                    _out.write("&#xa0;");
+                    break;
+                default:
+                    final char[] chars = Character.toChars(codepoint);
+                    if (chars.length == 1) {
+                        char c = chars[0];
+                        // YK: XmlBeans silently replaces all ISO control characters ( < 32) with question marks.
+                        // the same rule applies to "not a character" symbols.
+                        if (replaceWithQuestionMark(c)) {
+                            _out.write('?');
+                        } else {
+                            _out.write(c);
+                        }
+                    } else {
+                        _out.write(chars);
+                    }
+                    break;
+            }
+        }
+    }
+
     static boolean replaceWithQuestionMark(char c) {
         return c < ' ' || ('\uFFFE' <= c && c <= '\uFFFF');
     }

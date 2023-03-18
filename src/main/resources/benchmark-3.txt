@@ -1,0 +1,195 @@
+# JMH version: 1.36
+# VM version: JDK 11.0.18, OpenJDK 64-Bit Server VM, 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.apache.poi.xssf.streaming.Main.bench_66532_2
+
+# Run progress: 0.00% complete, ETA 00:20:00
+# Fork: 1 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2104047.507 ops/s
+# Warmup Iteration   2: 1095068.468 ops/s
+# Warmup Iteration   3: 2602924.336 ops/s
+# Warmup Iteration   4: 2379301.909 ops/s
+# Warmup Iteration   5: 2299187.618 ops/s
+Iteration   1: 2557164.299 ops/s
+Iteration   2: 2405267.192 ops/s
+Iteration   3: 2338002.980 ops/s
+Iteration   4: 2357553.327 ops/s
+Iteration   5: 2422149.479 ops/s
+
+# Run progress: 8.33% complete, ETA 00:30:37
+# Fork: 2 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2355034.771 ops/s
+# Warmup Iteration   2: 1103163.167 ops/s
+# Warmup Iteration   3: 2388739.743 ops/s
+# Warmup Iteration   4: 2358325.570 ops/s
+# Warmup Iteration   5: 2409233.135 ops/s
+Iteration   1: 2354734.459 ops/s
+Iteration   2: 2314710.857 ops/s
+Iteration   3: 2358221.638 ops/s
+Iteration   4: 2405081.643 ops/s
+Iteration   5: 2352792.193 ops/s
+
+# Run progress: 16.67% complete, ETA 00:28:09
+# Fork: 3 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2369656.395 ops/s
+# Warmup Iteration   2: 1116258.184 ops/s
+# Warmup Iteration   3: 2403540.680 ops/s
+# Warmup Iteration   4: 2348891.050 ops/s
+# Warmup Iteration   5: 2389970.104 ops/s
+Iteration   1: 2383698.053 ops/s
+Iteration   2: 2385474.624 ops/s
+Iteration   3: 2366857.355 ops/s
+Iteration   4: 2424564.138 ops/s
+Iteration   5: 2383712.891 ops/s
+
+
+Result "org.apache.poi.xssf.streaming.Main.bench_66532_2":
+  2387332.342 ±(99.9%) 60085.276 ops/s [Average]
+  (min, avg, max) = (2314710.857, 2387332.342, 2557164.299), stdev = 56203.805
+  CI (99.9%): [2327247.066, 2447417.618] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 11.0.18, OpenJDK 64-Bit Server VM, 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.apache.poi.xssf.streaming.Main.bench_66532_final
+
+# Run progress: 25.00% complete, ETA 00:25:36
+# Fork: 1 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2375263.660 ops/s
+# Warmup Iteration   2: 1124903.360 ops/s
+# Warmup Iteration   3: 2371447.034 ops/s
+# Warmup Iteration   4: 2322644.737 ops/s
+# Warmup Iteration   5: 2315468.622 ops/s
+Iteration   1: 2341616.509 ops/s
+Iteration   2: 2388209.984 ops/s
+Iteration   3: 2110012.456 ops/s
+Iteration   4: 2401400.902 ops/s
+Iteration   5: 2232458.907 ops/s
+
+# Run progress: 33.33% complete, ETA 00:23:01
+# Fork: 2 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2255015.232 ops/s
+# Warmup Iteration   2: 1111728.269 ops/s
+# Warmup Iteration   3: 2390223.972 ops/s
+# Warmup Iteration   4: 2340255.121 ops/s
+# Warmup Iteration   5: 2279958.935 ops/s
+Iteration   1: 2400028.186 ops/s
+Iteration   2: 2374508.399 ops/s
+Iteration   3: 2384080.296 ops/s
+Iteration   4: 2377007.778 ops/s
+Iteration   5: 2360119.117 ops/s
+
+# Run progress: 41.67% complete, ETA 00:20:21
+# Fork: 3 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+2395995.550 ops/s
+# Warmup Iteration   2: 1074019.428 ops/s
+# Warmup Iteration   3: 2372289.638 ops/s
+# Warmup Iteration   4: 2460928.987 ops/s
+# Warmup Iteration   5: 2406367.306 ops/s
+Iteration   1: 2439909.536 ops/s
+Iteration   2: 2404408.113 ops/s
+Iteration   3: 2409223.081 ops/s
+Iteration   4: 2686454.545 ops/s
+Iteration   5: 2734657.827 ops/s
+
+
+Result "org.apache.poi.xssf.streaming.Main.bench_66532_final":
+  2402939.709 ±(99.9%) 160194.706 ops/s [Average]
+  (min, avg, max) = (2110012.456, 2402939.709, 2734657.827), stdev = 149846.227
+  CI (99.9%): [2242745.003, 2563134.415] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 11.0.18, OpenJDK 64-Bit Server VM, 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.apache.poi.xssf.streaming.Main.bench_original
+
+# Run progress: 50.00% complete, ETA 00:17:35
+# Fork: 1 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+611323.794 ops/s
+# Warmup Iteration   2: 564839.548 ops/s
+# Warmup Iteration   3: 645196.971 ops/s
+# Warmup Iteration   4: 641872.824 ops/s
+# Warmup Iteration   5: 643324.349 ops/s
+Iteration   1: 644628.288 ops/s
+Iteration   2: 645262.251 ops/s
+Iteration   3: 645521.558 ops/s
+Iteration   4: 644046.397 ops/s
+Iteration   5: 636836.753 ops/s
+
+# Run progress: 58.33% complete, ETA 00:14:10
+# Fork: 2 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+501326.955 ops/s
+# Warmup Iteration   2: 510786.420 ops/s
+# Warmup Iteration   3: 610040.496 ops/s
+# Warmup Iteration   4: 616542.472 ops/s
+# Warmup Iteration   5: 619078.778 ops/s
+Iteration   1: 619497.320 ops/s
+Iteration   2: 619714.041 ops/s
+Iteration   3: 618769.663 ops/s
+Iteration   4: 618170.353 ops/s
+Iteration   5: 618893.118 ops/s
+
+# Run progress: 66.67% complete, ETA 00:11:01
+# Fork: 3 of 3
+# Warmup Iteration   1: ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+456204.035 ops/s
+# Warmup Iteration   2: 433785.585 ops/s
+# Warmup Iteration   3: 478527.071 ops/s
+# Warmup Iteration   4: 476820.446 ops/s
+# Warmup Iteration   5: 477765.502 ops/s
+Iteration   1: 476247.030 ops/s
+Iteration   2: 477023.460 ops/s
+Iteration   3: 476362.006 ops/s
+Iteration   4: 473999.071 ops/s
+Iteration   5: 478856.006 ops/s
+
+
+Result "org.apache.poi.xssf.streaming.Main.bench_original":
+  579588.488 ±(99.9%) 81439.708 ops/s [Average]
+  (min, avg, max) = (473999.071, 579588.488, 645521.558), stdev = 76178.753
+  CI (99.9%): [498148.780, 661028.196] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:24:08
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                Mode  Cnt        Score        Error  Units
+Main.bench_66532_2      thrpt   15  2387332.342 ±  60085.276  ops/s
+Main.bench_66532_final  thrpt   15  2402939.709 ± 160194.706  ops/s
+Main.bench_original     thrpt   15   579588.488 ±  81439.708  ops/s
